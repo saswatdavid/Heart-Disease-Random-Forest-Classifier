@@ -32,7 +32,7 @@ Random Forest model to classify heart disease using data from the Machine Learni
 ## Model Evaluation
 * Confusion Matrix
 * Feature Importance
-* Receiver Operating Characteristic Curve
+* Receiver Operating Characteristic (ROC) Curve
 * Correlogram
 * Error Rate with Trees
 * Number of Nodes Distribution
