@@ -14,7 +14,7 @@ Random Forest model to classify heart disease using data from the Machine Learni
 ## Input Variables
 |#	|Variable	|Description																																									|
 |:-:|:---------:|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|1	|age		|**Age of Patient** 																																							|
+|1	|age		|**Age** of Patient 																																							|
 |2	|sex		|**Sex**: 0 = Female, 1 = Male 																																					|
 |3	|cp			|**Chest Pain**: 1 = Typical Angina, 2 = Atypical Angina, 3 = Non-Anginal Pain, 4 = Asymptomatic 																				|
 |4	|trestbps	|**Resting Blood Pressure** (in mm Hg) 																																			|
