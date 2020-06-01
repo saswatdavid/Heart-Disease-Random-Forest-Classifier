@@ -13,6 +13,7 @@ Random Forest
 
 ## Input Variables
 |#	|Variable	|Description																																									|
+|---|-----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |1	|age		|age of patient 																																								|
 |2	|sex		|0 = female, 1 = male 																																							|
 |3	|cp			|chest pain: 1 = typical angina, 2 = atypical angina, 3 = non-anginal pain, 4 = asymptomatic 																					|
