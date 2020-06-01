@@ -29,7 +29,7 @@ Random Forest model to classify heart disease using data from the Machine Learni
 |13	|thal		|**Thalium Heart Scan**: 3 = Normal (no cold spots), 6 = Fixed Defect (cold spots during rest and exercise), 7 = Reversible Defect (when cold spots only appear during exercise)|
 |T	|hd         |Diagnosis of **Heart Disease**: 0 if less than or equal to 50% diameter narrowing, 1 if greater than 50% diameter narrowing													|
 
-##Model Evaluation
+## Model Evaluation
 *Confusion Matrix
 *Feature Importance
 *Receiver Operating Characteristic Curve
