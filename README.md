@@ -14,9 +14,9 @@ Random Forest
 ## Input Variables
 |#	|Variable	|Description																																									|
 |---|-----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|1	|age		|age of patient 																																								|
-|2	|sex		|0 = female, 1 = male 																																							|
-|3	|cp			|chest pain: 1 = typical angina, 2 = atypical angina, 3 = non-anginal pain, 4 = asymptomatic 																					|
+|1	|age		|**age of patient** 																																								|
+|2	|sex		|**sex**: 0 = female, 1 = male 																																							|
+|3	|cp			|**chest pain**: 1 = typical angina, 2 = atypical angina, 3 = non-anginal pain, 4 = asymptomatic 																					|
 |4	|trestbps	|resting blood pressure (in mm Hg) 																																				|
 |5	|chol		|serum cholestoral in mg/dl 																																					|
 |6	|fbs		|fasting blood sugar if less than 120 mg/dl, 1 = TRUE, 0 = FALSE 																												|
