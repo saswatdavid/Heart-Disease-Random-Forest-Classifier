@@ -1,5 +1,5 @@
 # Heart Disease Random Forest Classifier
-Random Forest model to classify heart disease using data from the Machine Learning repository of University of California, Irvine.
+Random Forest model to classify heart disease using data from the Machine Learning [repository](http://archive.ics.uci.edu/ml/machine-learning-databases/ "University of California, Irvine - Machine Learning Databases") of University of California, Irvine.
 
 ## Data Source
 1. Hungarian Institute of Cardiology. Budapest: Andras Janosi, M.D.
@@ -9,7 +9,7 @@ Random Forest model to classify heart disease using data from the Machine Learni
 5. Cleveland Clinic Foundation: Robert Detrano, M.D., Ph.D.
 
 ## Algorithm Used
-Random Forest
+`Random Forest`
 
 ## Input Variables
 |#	|Variable	|Description																																									|
