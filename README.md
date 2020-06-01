@@ -27,4 +27,12 @@ Random Forest model to classify heart disease using data from the Machine Learni
 |11	|slope		|The slope of the peak exercise ST segment: 1 = Upsloping, 2 = Flat, 3 = Downsloping 																							|
 |12	|ca			|Number of Major Vessels (0-3) colored by **Fluoroscopy**																														|	
 |13	|thal		|**Thalium Heart Scan**: 3 = Normal (no cold spots), 6 = Fixed Defect (cold spots during rest and exercise), 7 = Reversible Defect (when cold spots only appear during exercise)|
-|T	|hd         |Diagnosis of **Heart Disease**: 0 if less than or equal to 50% diameter narrowing, 1 if greater than 50% diameter narrowing														|
+|T	|hd         |Diagnosis of **Heart Disease**: 0 if less than or equal to 50% diameter narrowing, 1 if greater than 50% diameter narrowing													|
+
+##Model Evaluation
+*Confusion Matrix
+*Feature Importance
+*Receiver Operating Characteristic Curve
+*Correlogram
+*Error Rate with Trees
+*Number of Nodes Distribution
