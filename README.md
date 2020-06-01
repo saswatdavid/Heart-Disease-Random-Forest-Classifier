@@ -1,6 +1,10 @@
 # Heart Disease Random Forest Classifier
 Random Forest model to classify heart disease using data from the Machine Learning [repository](http://archive.ics.uci.edu/ml/machine-learning-databases/ "University of California, Irvine - Machine Learning Databases") of University of California, Irvine.
 
+The model looks at 13 different input variables of a patient and classifies whether he/she is likely to have 50% Diameter Coronary Stenosis. Coronary Stenosis is an abnormal narrowing of the coronary arteries that send much needed blood to the heart muscle. That blood flow can be blocked by cholesterol-rich plaques of atherosclerosis. A moderate amount of heart blockage is typically that in the 40-70% range.
+
+This repository can also be used to build, tune and extensively evaluate the Random Forest models.
+
 ## Data Source
 1. Hungarian Institute of Cardiology. Budapest: Andras Janosi, M.D.
 2. University Hospital, Zurich, Switzerland: William Steinbrunn, M.D.
@@ -8,7 +12,7 @@ Random Forest model to classify heart disease using data from the Machine Learni
 4. V.A. Medical Center, Long Beach: : Robert Detrano, M.D., Ph.D.
 5. Cleveland Clinic Foundation: Robert Detrano, M.D., Ph.D.
 
-## Algorithm Used
+## Algorithm
 `Random Forest`
 
 ## Input Variables
@@ -33,6 +37,8 @@ Random Forest model to classify heart disease using data from the Machine Learni
 * Confusion Matrix
 * Feature Importance
 * Receiver Operating Characteristic (ROC) Curve
+* Log Loss
 * Correlogram
-* Error Rate with Trees
+* Optimise ntree
+* Tume mtry
 * Number of Nodes Distribution

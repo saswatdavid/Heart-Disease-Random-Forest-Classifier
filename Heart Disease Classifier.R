@@ -155,26 +155,27 @@ predicted_prob <- predict(model, test_data, type = 'prob')
 
 #EVALUATE MODEL####
 
-#Predicted Confusion Matrix
+##CONFUSION MATRIX
 confusionMatrix(predicted, test_data$hd)
 
-#Plot Feature Importance
+##FEATURE IMPORTANCE
+#Plot 
 varImpPlot(model, type = 2, main = "Feature Importance")
 
-#Write Feature Importance to CSV file
+#Write to CSV file
 write.csv(importance(model), "Feature Importance.csv")
 
-#Number of Nodes
+##NUMBER OF NODES DISTRIBUTION 
 hist(treesize(model),
      main = "Number of Nodes for Trees",
      xlab = "Number of Nodes",
      ylab = "Count of Trees",
      col = "blue")
 
-#Plot Error Rate with Trees
+##OPTIMIZE NTREES
 plot(model, main = "Error Rate with Increase in Trees")
 
-#ROC Curve
+##ROC CURVE
 par(pty = "s")
 
 plot.roc(train_data$hd, model$votes[,1],
@@ -185,3 +186,37 @@ plot.roc(train_data$hd, model$votes[,1],
          col = "blue", lwd = 3)
 
 par(pty = "m")
+
+##Tune MTRY
+train_data <- as.data.frame(train_data)
+
+tuneRF(train_data[, 2:14], train_data[, 1],
+       stepFactor = 0.5,
+       plot = TRUE,
+       ntreeTry = 300,
+       trace = TRUE,
+       improve = 0.1)
+
+##LOG LOSS
+#Prepare Actual-Prediction % Dataframe
+actual_prob <- data.frame(actual = case_when(train_data$hd == "Unhealthy" ~ 1,
+                                             train_data$hd == "Healthy" ~ 0),
+                          predict.1 = model$votes[,2])
+
+#Global Log Loss
+logLoss(actual_prob$actual, actual_prob$predict.1)
+
+#Calculate Log Loss
+actual_prob$log_loss <- case_when(actual_prob$actual == 1 ~ -1*log(actual_prob$predict.1),
+                                  actual_prob$actual == 0 ~ -1*log(1 - actual_prob$predict.1))
+
+#Plot
+ggplot(actual_prob[actual_prob$actual == 1,], aes(x = predict.1, y = log_loss, color = 'red')) +
+  geom_point(shape = 2) +
+  geom_point(data = actual_prob[actual_prob$actual == 0, c(2, 3)], color = 'blue', shape = 1) +
+  scale_color_manual(labels = "Unhealthy", values = "red") +
+  theme_bw() +
+  guides(color=guide_legend("Model Classified Points")) +
+  labs(x = "Probability of Unhealthy", y = "Log Loss") +
+  ggtitle("Log Loss") +
+  theme(plot.title = element_text(hjust = 0.5))
