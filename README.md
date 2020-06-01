@@ -30,9 +30,9 @@ Random Forest model to classify heart disease using data from the Machine Learni
 |T	|hd         |Diagnosis of **Heart Disease**: 0 if less than or equal to 50% diameter narrowing, 1 if greater than 50% diameter narrowing													|
 
 ## Model Evaluation
-*Confusion Matrix
-*Feature Importance
-*Receiver Operating Characteristic Curve
-*Correlogram
-*Error Rate with Trees
-*Number of Nodes Distribution
+* Confusion Matrix
+* Feature Importance
+* Receiver Operating Characteristic Curve
+* Correlogram
+* Error Rate with Trees
+* Number of Nodes Distribution
